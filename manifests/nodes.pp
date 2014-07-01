@@ -1,3 +1,5 @@
-node 'cookbook','cookbook-test' {
-  include puppet
+node 'cookbook' {
+	file { '/tmp/hello':
+	    content => "Hello, world\n",
+	}
 }
